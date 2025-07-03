@@ -12,16 +12,21 @@
 body {
   color: var(--text);
   background-color: var(--light);
-  line-height: 1.6;
+  line-height: 1.75;
 }
 .container {
-  width: min(90%, 900px);
+  max-width: 960px;
+  width: 90%;
   margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero {
   background: var(--primary);
   color: white;
-  padding: 60px 0;
+  padding: 60px 20px;
   text-align: center;
 }
 .hero .subtitle {
@@ -39,8 +44,31 @@ body {
   color: white;
   font-size: 0.9em;
 }
+.resume-button {
+  margin-top: 20px;
+}
+.resume-button a {
+  background-color: #ffffff;
+  color: #0d3b66;
+  padding: 10px 20px;
+  border: 2px solid #0d3b66;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.resume-button a:hover {
+  background-color: #0d3b66;
+  color: #fff;
+}
+main {
+  padding: 40px 0;
+  width: 100%;
+}
 main section {
-  margin: 40px 0;
+  margin: 60px 0;
+  width: 100%;
+  text-align: left;
 }
 h2 {
   color: var(--primary);
@@ -74,12 +102,15 @@ h2 {
   background: white;
   padding: 20px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 .job h3 {
   font-size: 1.2em;
   color: var(--primary);
 }
-.job span { font-weight: 400; }
+.job span {
+  font-weight: 400;
+}
 .date {
   color: var(--muted);
   font-size: 0.9em;
