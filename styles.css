@@ -1,4 +1,70 @@
-img{
-    width: 50px;
-    height: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+header, section, footer {
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  color: #005a9c;
+  margin-bottom: 5px;
+}
+
+.contact a, .contact span {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #005a9c;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+article h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+article span {
+  float: right;
+  color: #666;
+  font-size: 0.9em;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.project {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
 }
